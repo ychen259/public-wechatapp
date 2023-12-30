@@ -1,0 +1,14 @@
+
+<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+</button>
+<view class="box">
+
+  <view class="row">
+    <view class="text1">昵称：</view>
+    <input type="nickname" bindinput="handleNickname" class="weui-input" placeholder="请输入昵称" value="{{nickname}}" />
+  </view>
+  <navigator url="/pages/account/account" open-type="switchTab">
+    <van-button type="primary" bindtap="handleInfoUpdate" block round >确认</van-button>
+  </navigator>
+</view>

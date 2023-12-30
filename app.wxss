@@ -1,0 +1,23 @@
+page{
+  --primary-color: #2b4b6b;
+}
+
+.container {
+  background-color: #ffffff; /* 背景是白色 */
+  padding: 20rpx; /* 缩进 20rpx */
+  margin:20rpx;
+  width:85%;
+  min-height: 93vh;
+  border-radius: 20rpx; /* 设置圆角，值可以根据需要调整 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eee; /* 背景颜色是灰色 */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}

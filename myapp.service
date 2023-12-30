@@ -1,0 +1,13 @@
+[Unit]
+Description=My_Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /home/ec2-user/index.py
+RuntimeMaxSec=43200s
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

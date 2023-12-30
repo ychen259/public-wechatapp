@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/account/account",
+    "pages/login/login",
+    "pages/contactUs/contactUs",
+    "pages/aboutUs/aboutUs",
+    "pages/suggestion/suggestion",
+    "pages/giftCard/giftCard",
+    "pages/msgPayment/msgPayment",
+    "pages/removeWaterMask/removeWaterMask"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "无所不知的聊天机器人",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "backgroundTextStyle":"light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "聊天",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-active.png"
+      },
+      {
+        "pagePath": "pages/removeWaterMask/removeWaterMask",
+        "text": "消除",
+        "iconPath": "/images/magic-remove.png",
+        "selectedIconPath": "/images/magic-remove-active.png"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "我的",
+        "iconPath": "/images/message.png",
+        "selectedIconPath": "/images/message-active.png"
+      }
+  
+    ]
+  },
+  "usingComponents": {
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-loading": "vant-weapp/loading/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-slider": "@vant/weapp/slider/index"
+  }
+}

@@ -1,0 +1,26 @@
+.hiddenCanvas{
+	position:fixed;
+	left:100%;
+}
+
+.mycontainer{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction:column;
+	border-top: 1px solid var(--primary-color);
+  	border-bottom: 1px solid var(--primary-color);
+}
+
+.custom-button>.van-button--primary {
+  padding: 5rpx 100rpx; /* 自定义按钮内边距 */
+  font-size: 18px; /* 自定义按钮字体大小 */
+}
+
+.description{
+	padding-bottom:20rpx;
+	color: var(--primary-color);
+	font-weight: bold;
+	display: block;
+	text-align: center; /* 如果文本需要水平居中 */
+}

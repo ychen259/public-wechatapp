@@ -1,0 +1,33 @@
+<view class="headerContent" style="{{headerHeight}}">
+    <view class="profile-info">
+      <!-- 用户头像和昵称 -->
+      <navigator url="/pages/login/login" open-type="navigate">
+        <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      </navigator>
+      <text class="nickname">{{userInfo.nickname}}</text>
+    </view>
+
+</view>
+<view class="mycontainer" style="{{contentHeight}};background-color: #eee;">
+  <van-cell-group inset>
+    <navigator url="/pages/msgPayment/msgPayment" open-type="navigate">
+      <van-cell class="myCell" title="对话余额" value="{{userInfo.availableMsg}}条" size="large" title-style="font-weight: bolder;"/>
+    </navigator>
+  </van-cell-group>
+  <view style="height: 20rpx;"></view>
+
+  <van-cell-group inset>
+    <van-cell is-link title="每日任务"  link-type="navigateTo" url="/pages/dashboard/index"/>
+    <van-cell is-link title="卡密兑换" link-type="navigateTo" url="/pages/giftCard/giftCard"/>
+  </van-cell-group>
+
+  <view style="height: 20rpx;"></view>
+  <van-cell-group inset>
+    <van-cell is-link title="意见反馈" link-type="navigateTo" url="/pages/suggestion/suggestion"/>
+    <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/aboutUs/aboutUs"/>
+    <van-cell is-link title="联系客服" link-type="navigateTo" url="/pages/contactUs/contactUs"/>
+  </van-cell-group>
+
+
+
+</view>

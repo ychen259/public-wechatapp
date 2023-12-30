@@ -1,0 +1,14 @@
+<view class="content">
+	<view class="container">
+		<view class="item" style="text-align: center">
+	  		<text class="title" >请输入卡密</text>
+	  	</view>
+	  	<view class="item" >
+	  		<input class="input" placeholder="请输入卡密" bindinput="onCodeInput" />
+	  	</view>
+
+	  	<van-button class="custom-button" type="primary" round color="var(--primary-color)" bindtap="submitCode" >   查询   </van-button>
+
+	</view>
+</view>
+<van-toast id="van-toast" />

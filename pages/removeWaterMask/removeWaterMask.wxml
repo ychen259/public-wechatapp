@@ -1,0 +1,28 @@
+<van-grid clickable column-num="3" border="{{ false }}" gutter="{{ 40 }}">
+  <van-grid-item use-slot bind:click="chooseImage">
+    <image style="width: {{headerHeight}}px; height:{{headerHeight}}px" src="/static/upload.png"></image>
+  </van-grid-item>
+  <van-grid-item use-slot bind:click="processImage">
+    <image style="width: {{headerHeight}}px; height:{{headerHeight}}px" src="/static/magic-remove.png"></image>
+  </van-grid-item>
+  <van-grid-item use-slot bind:click="downloadFile">
+    <image style="width:{{headerHeight}}px; height:{{headerHeight}}px" src="/static/download.png"></image>
+  </van-grid-item>
+</van-grid>
+
+<view class="mycontainer" style="height:{{containerHeight}}px">
+  <!--description,只有当图片没有选择上传的时候显示-->
+  <view wx-if="{{!isChooseImage}}">
+    <text class="description">借助AI工具</text>
+    <text class="description">您可以轻松地从照片中删除不需要的物体</text>
+
+    <image style="width: 750rpx; height: 300rpx;" src="/static/example.jpg" ></image>
+  </view>
+
+  <!--画布-->
+  <canvas wx-if="{{isChooseImage}}" canvas-id="mainCanvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;" bindtouchstart="touchStart" bindtouchmove="touchMove"></canvas>
+  
+</view>
+
+<canvas class="hiddenCanvas" canvas-id="maskCanvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+<van-toast id="van-toast" />

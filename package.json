@@ -1,0 +1,22 @@
+{
+  "name": "miniprogram-4",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.11.1",
+    "crypto": "^1.0.1",
+    "https": "^1.0.0",
+    "image-size": "^1.0.2",
+    "js-base64": "^3.7.5",
+    "vant-weapp": "^0.5.29",
+    "weapp.socket.io": "^2.2.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

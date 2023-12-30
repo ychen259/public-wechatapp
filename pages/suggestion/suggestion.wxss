@@ -1,0 +1,23 @@
+/* 样式可以根据需要进行自定义调整 */
+.form-group {
+  margin: 20rpx;
+  margin-bottom:50rpx;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold; /* 粗体 */
+  color: #00a0e9; /* 天蓝色 */
+}
+
+.textarea, .input {
+  border: 1px solid #ccc;
+  padding: 10rpx;
+  width: 100%;
+  background-color: #eee; /* 背景颜色是灰色 */
+  border-radius: 20rpx; /* 设置圆角，值可以根据需要调整 */
+}
+
+.item{
+	margin-bottom:15rpx;
+}

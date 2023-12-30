@@ -1,0 +1,10 @@
+<view class="content">
+	<view class="container">
+		<view class="item">客服邮箱： 1050043110@qq.com</view>
+		<view class="item">客服微信：(长按添加)</view>
+		<view class="image-container">
+			<image class="item"  show-menu-by-longpress="{{true}}" style="height:500rpx;width:500rpx;" src="../../static/客服.png" mode="aspectFit"></image>
+		</view>
+	</view>
+</view>
+

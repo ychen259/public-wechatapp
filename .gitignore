@@ -1,0 +1,4 @@
+node_modules/
+miniprogram_npm/
+微信支付_cert/
+config.json

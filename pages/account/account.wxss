@@ -1,0 +1,39 @@
+/* 样式定义示例，你可以根据需要修改 */
+.mycontainer {
+  padding: 40rpx;
+  box-sizing:border-box;
+}
+
+.headerContent{
+  background-color: #2b4b6b; 
+  display: flex; 
+  flex-direction: row;
+}
+
+.profile-info {
+  padding: 80rpx;
+  display: flex; 
+  align-items: center;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickname {
+  padding: 40rpx;
+}
+
+
+.myCell>.van-cell>.van-cell__value {
+  color:#2b4b6b !important;
+  font-weight: bolder;
+}
+
+.menu-item {
+  border-bottom: 1rpx solid #e6e6e6;
+  padding: 10rpx 0;
+  text-align: left;
+}

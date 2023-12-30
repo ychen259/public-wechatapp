@@ -1,0 +1,28 @@
+.item {
+  margin-bottom: 30rpx; /* 为每个子视图添加底部间隔，以增加它们之间的距离 */
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold; /* 粗体 */
+  color: #00a0e9; /* 天蓝色 */
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 10rpx;
+  width: 500rpx;
+  border-radius: 20rpx;
+  background-color: #eee; /* 背景颜色是灰色 */
+  margin: 0 auto; /* 使用 margin 居中 */
+}
+
+.custom-button{
+	display: flex;
+	justify-content:center;
+	align-content:center;
+}
+.custom-button>.van-button--primary {
+  padding: 5rpx 100rpx; /* 自定义按钮内边距 */
+  font-size: 18px; /* 自定义按钮字体大小 */
+}

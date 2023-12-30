@@ -1,0 +1,44 @@
+<view>
+	<scroll-view style="width:100%;height:{{contentHeight}}px;" class ="msgbox" scroll-with-animation="{{true}}" scroll-y="{{true}}" scroll-into-view="unique_id_{{msgList.length+1}}" show-scrollbar="{{false}}" enhanced="{{true}}">
+		<view wx:for="{{msgList}}" wx:for-item="x" wx:for-index="i" wx:key="i" id="{{x.id}}">
+			<view class="flex-column-start">
+				<block wx:if="{{x.my}}">
+					<view class="userinfo">
+						<view class="flex justify-end" style="margin-right:5%;">
+							<view class="usermsg" style="border-radius:35rpx;background-color:#5ef17c;">
+								<text style="word-break:break-all;">{{x.msg}}</text>
+							</view>
+						</view>
+					</view>
+				</block>
+				<block wx:if="{{!x.my}}">
+					<view class="aiinfo">
+						<view class="chat-img ">
+							<image style="height:100rpx;width:100rpx;" src="../../static/openai.png" mode="aspectFit"></image>
+						</view>
+						<view class="flex" style="width:500rpx;">
+							<view class="aimsg" style="border-radius:35rpx;background-color:#f9f9f9;">
+								<user-select style="word-break:break-all;" selectable="true"  user-select="true">{{x.msg}}</user-select>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</view>
+
+		<view id="unique_id_{{msgList.length+1}}"></view>
+		<!--<view style="height:{{currentKeyboardHeight}}px;"> </view>-->
+		
+	</scroll-view>
+
+	<view class="flex-column-center">
+		<block>
+			<view class="inpubut">
+				<input class="dh-input" type="text" bindinput="handleInput" value="{{msg}}" placeholder="描述您的问题" />
+				<button class="btn " disabled="{{msgLoad}}" bindtap="sendMsg" >{{sentext}}</button>	
+			</view>
+		</block>
+	</view>
+
+</view>
+<van-toast id="van-toast" />

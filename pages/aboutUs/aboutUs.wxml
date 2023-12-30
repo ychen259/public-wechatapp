@@ -1,0 +1,12 @@
+<view class="content">
+	<view class="container">
+		<view class="item">AI聊天机器人,系统由独立开发着开发,目前是1.0版本,现在只有聊天功能，后续还会添加图像识别生成等类似功能。如果在对话中
+		对应的模型进行提问，模型是经过多次调试好的，更加能精准的回复你想要的问题</view>
+		<view class="item">我的目的是为用户提供信息、回答问题、提供建议和支持各种文本生成任务。</view>
+		<view class="item">客服微信：(长按添加)</view>
+		<view class="image-container">
+			<image class="item" show-menu-by-longpress="{{true}}" style="height:500rpx;width:500rpx;" src="../../static/客服.png" mode="aspectFit"></image>
+		</view>
+	</view>
+</view>
+

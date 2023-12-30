@@ -1,0 +1,36 @@
+<view class="content">
+	<view class="container">
+	  <view class="form-group">
+	  	<view class = "item">
+	    	<text class="label">反馈类型：</text>
+	    </view>
+	    <view class = "item">
+			<van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+			  <van-radio checked-color="var(--primary-color)" wx:for ="{{radioTypes}}" wx:key="index" wx:for-item="type" name="{{type}}">{{type}}</van-radio>
+			</van-radio-group>
+		</view>
+	  </view>
+
+	  <view class="form-group">
+	  	<view class = "item">
+	    	<text class="label">反馈内容：</text>
+	    </view>
+	    <view class = "item">
+	    	<textarea class="textarea" placeholder="请输入您的反馈意见" bindinput="onContentInput"></textarea>
+	    </view>
+	  </view>
+
+	  <view class="form-group">
+	  	<view class = "item">
+	    	<text class="label">联系方式：</text>
+	    </view>
+	    <view class = "item">
+	    	<input class="input" placeholder="选填，方便我们联系您" bindinput="onContactInput"></input>
+	    </view>
+	  </view>
+
+	  <van-button type="primary" round color="var(--primary-color)" bindtap="submitFeedback" block>提交反馈</van-button>
+
+	</view>
+</view>
+<van-toast id="van-toast" />

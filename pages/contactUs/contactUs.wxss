@@ -1,0 +1,9 @@
+/* 样式定义示例，你可以根据需要修改 */
+.item {
+  margin-bottom: 30rpx; /* 为每个子视图添加底部间隔，以增加它们之间的距离 */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+}

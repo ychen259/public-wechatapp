@@ -1,0 +1,42 @@
+/* 样式定义示例，你可以根据需要修改 */
+.mycontainer {
+  padding: 50rpx;
+  box-sizing:border-box;
+
+}
+
+.headerContent{
+  height: 25vh; 
+  background-color: #2b4b6b; 
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerText {
+  color: white;
+}
+
+.panel{
+    background-color: white;
+    border-radius: 15rpx; /* 这里的数值可以根据需要调整，表示圆角的半径 */
+    padding: 50rpx;
+    margin-top: -100rpx;
+}
+
+.central-button{
+  display: flex;
+  justify-content:center;
+  align-content:center;
+}
+
+.selected-grid-item>.van-grid-item>.van-grid-item__content {
+  /* 未选中项目的样式 */
+  border: 2px solid #ddd;  /* 未选中项目的默认边框颜色 */
+}
+
+.selected-grid-itemselected>.van-grid-item>.van-grid-item__content {
+  /* 选定项目的样式 */
+  border: var(--primary-color) 4px solid;  /* 选定项目的边框颜色 */
+}
